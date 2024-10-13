@@ -15,9 +15,9 @@ do
   if [[ $WINNER != "winner" ]]
     then
     #get winner_id to put into names column for teams table
-    WINNER_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$WINNER'")
+    WINNER_NAME=$($PSQL "SELECT name FROM teams WHERE name='$WINNER'")
     #if not found
-    if [[ -z $WINNER_ID ]] #CHECKS IF WINNER_ID IS EMPTY, INSERTS RESULTS INTO DATABASE IF ID IS EMPTY/NONEXISTENT
+    if [[ -z $WINNER_NAME ]] #CHECKS IF WINNER_NAME IS EMPTY, INSERTS RESULTS INTO DATABASE IF NAME IS EMPTY/NONEXISTENT
       then
       INSERT_WINNER_TEAM_NAME=$($PSQL "INSERT INTO teams(name) VALUES('$WINNER')")   
         if [[ $INSERT_WINNER_TEAM_NAME == "INSERT 0 1" ]]
@@ -33,8 +33,8 @@ do
   if [[ $OPPONENT != "opponent" ]]
     then
     #get opponent_id to put into names column for teams table
-    OPPONENT_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$OPPONENT'")
-    if [[ -z $OPPONENT_ID ]] #CHECKS IF id IS EMPTY, INSERTS RESULTS INTO DATABASE IF ID IS EMPTY/NONEXISTENT
+    OPPONENT_NAME=$($PSQL "SELECT name FROM teams WHERE name='$OPPONENT'")
+    if [[ -z $OPPONENT_NAME ]] #CHECKS IF OPPONENT_NAME IS EMPTY, INSERTS RESULTS INTO DATABASE IF NAME IS EMPTY/NONEXISTENT
       then
       INSERT_OPPONENT_TEAM_NAME=$($PSQL "INSERT INTO teams(name) VALUES('$OPPONENT')")   
         if [[ $INSERT_OPPONENT_TEAM_NAME == "INSERT 0 1" ]]
