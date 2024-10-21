@@ -1,7 +1,7 @@
-/* create the database */
+/* create database */
 CREATE DATABASE worldcup
 
-/* connect to the database */
+/* connect to database */
 USE worldcup
 
 /* create table 'game' to store the games information, identity(1,1) for starting value of ID and increment*/
