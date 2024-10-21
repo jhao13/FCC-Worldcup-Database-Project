@@ -7,7 +7,7 @@ USE worldcup
 /* create table 'game' to store the games information, identity(1,1) for starting value of ID and increment*/
 
 CREATE TABLE games (
-    game_id integer NOT NULL identity(1,1,
+    game_id integer NOT NULL identity(1,1),
     year integer NOT NULL,
     round character varying(50) NOT NULL,
     winner_id integer NOT NULL,
