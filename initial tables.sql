@@ -33,7 +33,7 @@ ALTER TABLE teams
 ALTER TABLE games
     ADD CONSTRAINT games_pkey PRIMARY KEY (game_id);
 
-ALTER TABLE public.teams
+ALTER TABLE teams
     ADD CONSTRAINT teams_pkey PRIMARY KEY (team_id);
 
 /* add foreign keys */
