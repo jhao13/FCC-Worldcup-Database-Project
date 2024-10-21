@@ -14,6 +14,7 @@ Added appropriate constraints (primary keys and foreign keys) required to relate
 Table Info:
 
 'games' table lists all matches and scores made by both the winner team and the opponent team (using team_id as the identifier).
+
 'teams' table lists all teams that played in the matches.
 
 winner_id and opponent_id in 'games' table references the same team_id in 'teams' table to prevent duplicate team names.
