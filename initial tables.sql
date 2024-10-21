@@ -26,15 +26,15 @@ CREATE TABLE teams (
 /* add unique constraint on team names */
 
 ALTER TABLE teams
-    ADD CONSTRAINT teams_name_key UNIQUE (name);
+    ADD UNIQUE (name);
 
 /* add primary key constraints */
 
 ALTER TABLE games
-    ADD CONSTRAINT games_pkey PRIMARY KEY (game_id);
+    ADD PRIMARY KEY (game_id);
 
 ALTER TABLE teams
-    ADD CONSTRAINT teams_pkey PRIMARY KEY (team_id);
+    ADD PRIMARY KEY (team_id)
 
 /* add foreign keys */
 
