@@ -5,7 +5,7 @@ Create a Bash script that enters information from World Cup games.csv file into 
 The project was made as part of the FreeCodeCamp Relational Databases Certificate course
 
 ## Creating the database
-Using CSV Dataset: [games.csv](https://github.com/redlessblade/FCC-Worldcup-database/blob/main/games.csv)
+Using CSV Dataset: [games.csv](https://github.com/jhao13/FCC-Worldcup-database/blob/main/games.csv)
 
 Created the database, 'worldcup', and the tables ('teams' and 'games') on PostgreSQL to visualise the data from games.csv.
 
@@ -25,10 +25,10 @@ Created a Bash script that reads the games.csv data and uses SQL query commands 
 
 Took constraints into consideration when creating the Bash script to insert all winner and opponent teams individually into 'teams' and then into 'games' based on the team_id created.
 
-Bash script used to read games.csv and insert data: [insert_data.sh](https://github.com/redlessblade/FCC-Worldcup-database/blob/main/insert_data.sh)
+Bash script used to read games.csv and insert data: [insert_data.sh](https://github.com/jhao13/FCC-Worldcup-database/blob/main/insert_data.sh)
 
-Finished by writing a Bash script that utilises SQL to query the database and obtain useful valuesL: [queries.sh](https://github.com/redlessblade/FCC-Worldcup-database/blob/main/queries.sh)
+Finished by writing a Bash script that utilises SQL to query the database and obtain useful valuesL: [queries.sh](https://github.com/jhao13/FCC-Worldcup-database/blob/main/queries.sh)
 
-Final database dump (after inserting data): [worldcup.sql](https://github.com/redlessblade/FCC-Worldcup-database/blob/main/worldcup.sql)
+Final database dump (after inserting data): [worldcup.sql](https://github.com/jhao13/FCC-Worldcup-database/blob/main/worldcup.sql)
 
 
